@@ -1,8 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./page/home/home";
-import SejaVoluntario from "./page/sejaVoluntario/sejaVoluntario";
-import Header from "./component/header/header";
-import Footer from "./component/footer/footer";
+import Home from "./page/home/Home";
+import SejaVoluntario from "./page/sejaVoluntario/SejaVoluntario";
+import Header from "./component/header/Header";
+import Footer from "./component/footer/Footer";
 import "./globalStyler.scss";
 
 export default function App() {
