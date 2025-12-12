@@ -1,0 +1,170 @@
+.footer {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 40px 16px 32px;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 56px;
+  flex-wrap: wrap;
+}
+
+.brand {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  max-width: 280px;
+}
+
+.logoImg {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.brandName {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 4px;
+}
+
+.brandText {
+  margin: 0;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.column {
+  min-width: 180px;
+}
+
+.columnTitle {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 0 12px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 6px;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.icon {
+  width: 18px;
+  text-align: center;
+  opacity: 0.7;
+}
+
+.divider {
+  margin: 28px 0 16px;
+  height: 1px;
+  background-color: black;
+}
+
+.copy {
+  text-align: center;
+  font-size: 11px;
+  opacity: 0.7;
+  margin: 0;
+}
+
+/* RESPONSIVO (TABLET & MOBILE) */
+
+@media (max-width: 960px) {
+  .top {
+    gap: 32px;
+  }
+
+  .brand {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer {
+    padding: 32px 20px 24px;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  .top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+  }
+
+  .brand {
+    align-items: center;
+    gap: 12px;
+  }
+
+  .brandText {
+    font-size: 13px;
+  }
+
+  .column {
+    width: 100%;
+  }
+
+  .columnTitle {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .list li {
+    font-size: 13px;
+  }
+
+  .divider {
+    margin-top: 24px;
+    margin-bottom: 16px;
+  }
+
+  .copy {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer {
+    padding: 28px 16px 20px;
+  }
+
+  .brandName {
+    font-size: 15px;
+  }
+
+  .brandText {
+    font-size: 12px;
+  }
+}

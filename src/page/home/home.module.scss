@@ -1,0 +1,368 @@
+.home {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 60px 20px;
+  box-sizing: border-box;
+
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    gap: 60px;
+    .left {
+      flex: 1;
+      .badge {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background: #f2f2f2;
+        padding: 10px 18px;
+        border-radius: 50px;
+        border: none;
+        font-size: 14px;
+        font-weight: 500;
+        color: #333;
+        cursor: default;
+
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+      h2 {
+        font-size: 42px;
+        font-weight: 700;
+        margin-top: 24px;
+        color: #000;
+        text-shadow: 0px 6px 2px rgba(0, 0, 0, 0.25);
+      }
+      p {
+        margin-top: 20px;
+        font-size: 18px;
+        color: black;
+        max-width: 450px;
+      }
+      .buttons {
+        display: flex;
+        gap: 18px;
+        margin-top: 28px;
+
+        .btnPrimary {
+          background: #00745a;
+          color: white;
+          padding: 14px 32px;
+          border-radius: 8px;
+          border: none;
+          font-size: 16px;
+          font-weight: 600;
+          cursor: pointer;
+          text-decoration: none;
+        }
+
+        .btnOutline {
+          padding: 14px 32px;
+          border-radius: 8px;
+          background: white;
+          border: 2px solid #00745a;
+          color: #00745a;
+          font-size: 16px;
+          font-weight: 600;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .right {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: 100%;
+        max-width: 500px;
+        border-radius: 10px;
+        object-fit: cover;
+      }
+    }
+  }
+
+  /* RESPONSIVO (TABLET & MOBILE) */
+  @media (max-width: 900px) {
+    .hero {
+      flex-direction: column;
+      text-align: center;
+
+      .left {
+        align-items: center;
+
+        p {
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        .buttons {
+          justify-content: center;
+        }
+      }
+
+      .right img {
+        max-width: 380px;
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    .hero h2 {
+      font-size: 32px;
+    }
+
+    .hero p {
+      font-size: 16px;
+    }
+
+    .hero .buttons .btnPrimary,
+    .hero .buttons .btnOutline {
+      width: 100%;
+      text-align: center;
+    }
+
+    .hero .buttons {
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+}
+
+.homeMiddle {
+  width: 100%;
+  background-color: #00745a;
+  padding: 72px 0 64px;
+
+  .wrapper {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+
+    h2 {
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .mainText {
+      font-size: 18px;
+      line-height: 1.4;
+      max-width: 640px;
+      margin-bottom: 48px;
+      opacity: 0.95;
+    }
+
+    .cardInfo {
+      width: 100%;
+      display: flex;
+      gap: 32px;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      flex: 1 1 0;
+      min-width: 280px;
+      max-width: 320px;
+      border: 1px solid white;
+      border-radius: 16px;
+      padding: 32px;
+      text-align: center;
+
+      h3 {
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 16px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 1.4;
+      }
+    }
+  }
+
+  /* RESPONSIVO (TABLET & MOBILE) */
+  @media (max-width: 1024px) {
+    .wrapper {
+      h2 {
+        font-size: 36px;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .wrapper {
+      align-items: center;
+      text-align: center;
+
+      h2 {
+        font-size: 30px;
+      }
+
+      .mainText {
+        font-size: 16px;
+        margin-bottom: 32px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .cardInfo {
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .card {
+        width: 100%;
+        max-width: none;
+        padding: 24px;
+      }
+    }
+  }
+}
+
+.impactSection {
+  width: 100%;
+  background-color: white;
+  padding: 80px 16px;
+  box-sizing: border-box;
+}
+
+.impactContainer {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.impactTitle {
+  font-size: 40px;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 8px;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+.impactSubtitle {
+  font-size: 18px;
+  color: black;
+  margin-bottom: 48px;
+  max-width: 700px;
+}
+
+.impactCards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.impactCard {
+  border: 1px solid black;
+  border-radius: 16px;
+  padding: 40px 32px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.impactValue {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #00745a;
+  margin-bottom: 16px;
+}
+
+.impactLabel {
+  font-size: 16px;
+  color: black;
+}
+
+/* RESPONSIVO (TABLET & MOBILE) */
+@media (max-width: 1024px) {
+  .impactSection {
+    padding: 64px 24px;
+  }
+
+  .impactContainer {
+    text-align: center;
+  }
+
+  .impactTitle {
+    font-size: 32px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .impactSubtitle {
+    font-size: 16px;
+    margin-bottom: 32px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .impactCards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .impactCard {
+    padding: 32px 24px;
+  }
+
+  .impactValue {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 640px) {
+  .impactSection {
+    padding: 48px 16px;
+  }
+
+  .impactContainer {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .impactTitle {
+    font-size: 28px;
+  }
+
+  .impactSubtitle {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+
+  .impactCards {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .impactCard {
+    padding: 24px 20px;
+  }
+
+  .impactValue {
+    font-size: 28px;
+  }
+
+  .impactLabel {
+    font-size: 14px;
+  }
+}
