@@ -4,8 +4,8 @@ Projeto desenvolvido para o curso de Desenvolvimento Full Stack da Vai Na Web.
 
 Meu primeiro projeto utilizando React, construído com foco em criar uma aplicação moderna, responsiva e baseada em um layout fornecido no Figma.
 
-👉 Acesse o site online (link será adicionado após o deploy)
-🔗 Deploy: [adicione aqui seu link]
+👉 Acesse o site online 
+🔗 Deploy: [(https://projeto-medico-voluntario-a.vercel.app/)]
 
 🩺 Sobre o Projeto
 
